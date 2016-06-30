@@ -1,8 +1,68 @@
-body{background-color: slategray;
-    color: honeydew}
-h1 {background-color: mediumpurple; color: #yellow}
-h2 {color:2f4f4f}
-h4 {color:purple}
-ol {color:ff00ff}
-p {color:lightpink}
-i {color:adff2f}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    font-size: 1.2em;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+body {
+    background-image: url("ocean.jpg");
+    background-repeat: no-repeat;
+    margin-left: 180px;
+    margin-right: auto;
+    width: 50%;
+    min-width: 700px;
+    max-width: 2048px;
+    padding-left: 20px;
+}
+
+figure {
+    margin-top: 30px;
+    width: 480px;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: papyrus, fantasy;
+}
+
+h1 {
+    background-color: #mediumpurple;
+    color: #99ccff;
+    margin-left: 190px;
+}
+
+h2 {
+    color: #cccccc;
+}
+
+h4 {
+    color: #66cccc;
+}
+
+ol {
+    color: #33ff00;
+}
+
+li {
+    list-style-type: square;
+}
+
+p {
+    color: lightpink font-family: "Times New Roman", Times, serif;
+    background-color: slategray;
+}
+
+i {
+    color: #adff2f;
+}
+
+footer {
+    font-size: 80%;
+    font-style: italic;
+}

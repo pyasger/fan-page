@@ -17,6 +17,7 @@ body {
     min-width: 700px;
     max-width: 2048px;
     padding-left: 20px;
+    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
 }
 
 figure {
@@ -39,6 +40,7 @@ h1 {
 
 h2 {
     color: #cccccc;
+    text-align: center
 }
 
 h4 {
@@ -51,11 +53,22 @@ ol {
 
 li {
     list-style-type: square;
+    opacity: 0.5;
 }
 
 p {
     color: lightpink font-family: "Times New Roman", Times, serif;
     background-color: slategray;
+    text-indent: 50px;
+    -webkit-columns: 100px 2;
+    columns: 100px 2;
+    
+        border-radius: 25px;
+    
+    padding: 20px; 
+    width: 600px;
+    height: 150px;
+
 }
 
 i {

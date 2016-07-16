@@ -1,94 +1,184 @@
 header {
+    background-color: #ccffff;
+    color: #9999cc;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #FFFFFF, #4f6d93);
+    color: #666666;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
-    font-size: 1.2em;
     font-weight: bold;
-    list-style-type: none;
+    padding: 20px;
+    float: left;
+    width: 160px;
+    padding-left: 30px;
+    
 }
 
-body {
-    background-image: url("ocean.jpg");
-    background-repeat: no-repeat;
-    margin-left: 180px;
-    margin-right: auto;
-    width: 50%;
-    min-width: 700px;
-    max-width: 2048px;
-    padding-left: 20px;
-    background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+main {
+    margin-left: 190px;
+    background-size: 100%;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background: #FFFFFF;
+    
 }
 
 figure {
-    margin-top: 30px;
-    width: 480px;
-    border: 1px solid #000000;
-    padding: 10px;
-}
-
-figcaption {
-    text-align: center;
-    font-family: papyrus, fantasy;
-}
-
-h1 {
-    background-color: #mediumpurple;
-    color: #99ccff;
-    margin-left: 190px;
+    float: none;
+    width: 100%
 }
 
 h2 {
-    color: #cccccc;
-    text-align: center
+    color: #90c7e3;
 }
 
-h4 {
-    color: #66cccc;
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
 }
 
-ol {
-    color: #33ff00;
+form {
+    background-color: #eaeaea;
+    font-family: Arial, sans-serif;
+    width: 350px;
+    padding: 10px;
 }
 
-li {
-    list-style-type: square;
-    opacity: 0.5;
+h1 {
+    margin: 0;
+    padding: 10px;
+    font-family: Georgia, Times New Roman, serif;
 }
 
-p {
-    color: lightpink font-family: "Times New Roman", Times, serif;
-    background-color: slategray;
-    text-indent: 50px;
-    -webkit-columns: 100px 2;
-    columns: 100px 2;
-    
-        border-radius: 25px;
-    
-    padding: 20px; 
-    width: 600px;
-    height: 150px;
-
+h2 {
+    font-family: Georgia, Times New Roman, serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
 }
 
-i {
-    color: #adff2f;
+h3 {
+    font-family: Georgia, Times New Roman, serif;
 }
 
 footer {
-    font-size: 80%;
+    font-size: 75%;
     font-style: italic;
+    font-family: Georgia, Times New Roman, serif;
+    padding: 20px;
+    margin-left: 190px;
+    background: #FFFFFF;
+    text-align: center;
 }
+
+
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid #3399cc;
+}
+
+tr {
+    text-align: center;
+    text-align: left
+}
+
+th {
+    text-align: center;
+}
+
+main ul {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    padding-left: 0;
+    font: 1.2em;
+    
+}
+
+nav a:link {
+    color: #000033;
+    
+}
+
+nav a:visited {
+    color: #344873;
+    
+}
+
+nav a:hover {
+    color: #000066;
+    transition: 3s ease-out;
+}
+
+#gallery {
+    position: relative;
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: #000033;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .25;
+}
+
 @media only screen and (max-width: 64em) {
     img {
         max-width: 100%;
     }
-    #wrapper {
-        min-width: 0;
-        width: auto;
-        box-shadow: none;
-        background: #90C7E3;
-    }
+ 
     main {
         margin-left: 0;
     }
@@ -96,7 +186,7 @@ footer {
         display: none;
     }
     nav {
-        float: none;
+        float: left;
         width: auto;
         text-align: center;
     }
@@ -148,6 +238,7 @@ footer {
     figure {
         display: none;
     }
+  
     h1,
     h2 {
         font-size: 100%;
@@ -171,4 +262,32 @@ footer {
     nav li {
         display: block;
     }
+}
+yurthero{ display: none; }
+homehero,
+
+trailhero {
+    background-image: none;
+    height: 0;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+}
+
+input {
+    display: block;
+    margin: 20px;
+}
+
+header,
+main,
+nav,
+footer,
+figure,
+figcaption {
+    display: block;
 }
